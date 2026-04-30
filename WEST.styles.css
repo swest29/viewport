@@ -1,7 +1,13 @@
-/* YOUR NAME GOES HERE */
+/* Sarina West */
 
 /* --------------- ADD CSS RESET TO THE FILE HERE --------------- */
-
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 
 /* ----- AUTOPREFIXER FOR VS CODE WAS USED FOR VENDOR PREFIXES ----- */
