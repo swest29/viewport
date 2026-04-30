@@ -214,10 +214,11 @@ img{
 
 /* ---------- MEDIUM SCREEN STYLES ---------- */
 /* --------------- BEGIN MEDIUM SCREEN SIZES --------------- */
-    /* header, footer{
+@media screen and (min-width: 900px) {
+    header, footer{
         background-color: var(--black);
         color: var(--white);
-    }   
+    }
 
     main{
         grid-template-columns: 1fr 1fr 1fr;
