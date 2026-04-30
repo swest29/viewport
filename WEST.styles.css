@@ -247,7 +247,8 @@ img{
 
 /* ---------- LARGE SCREEN STYLES ---------- */
 /* --------------- BEGIN LARGE SCREEN SIZES --------------- */
-    /* header, footer{
+@media screen and (min-width: 1200px) {
+    header, footer{
         background-color: var(--lime-green);
         color: var(--dark-gray);
     }
