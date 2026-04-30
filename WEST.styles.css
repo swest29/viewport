@@ -56,7 +56,16 @@ input, button, textarea, select {
 /* --------------- BEGIN USER PREFERS DARK COLOR SCHEME QUERY --------------- */
 
 /* CHANGE THE BODY'S BACKGROUND COLOR TO THE DARK GRAY IF THE USER PREFERS DARK MODE */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: var(--dark-gray);
+        color: var(--white);
+    }
 
+    section {
+        color: var(--white);
+    }
+}
 /* --------------- END USER PREFERS DARK COLOR SCHEME QUERY --------------- */
 
 
@@ -114,12 +123,11 @@ footer .icon{
 
 /* ----- HANDLE PREFERS REDUCED MOTION FOR THE ICON ANIMATIONS ----- */
 /* --------------- BEGIN USER PREFERS REDUCED MOTION QUERY --------------- */
-    @-webkit-keyframes icon-animation {
-        0% { font-variation-settings: "TIME" 1; }
+@media (prefers-reduced-motion: reduce) {
+    .icon {
+        animation: none;
     }
-    @keyframes icon-animation {
-        0% { font-variation-settings: "TIME" 1; }
-    }
+}
 /* --------------- END USER PREFERS REDUCED MOTION QUERY --------------- */
 
 
@@ -173,7 +181,8 @@ img{
 
 /* ---------- SMALL SCREEN STYLES ---------- */
 /* --------------- BEGIN SMALL SCREEN SIZES --------------- */
-    /* header, footer{
+@media screen and (min-width: 620px) {
+    header, footer{
         background-color: var(--lime-green);
         color: var(--dark-gray);
     }
